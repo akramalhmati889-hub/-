@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", serif;
+  
+  --color-medical-blue: #0056b3;
+  --color-medical-light: #e6f0ff;
+  --color-gold-accent: #d4af37;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 antialiased;
+    direction: rtl;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #d4af37 100%);
+}
+
+.blue-gradient {
+  background: linear-gradient(135deg, #0056b3 0%, #003d7a 100%);
+}
